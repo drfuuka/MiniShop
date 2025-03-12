@@ -54,7 +54,6 @@ const HomeScreen = () => {
       <TextInput
         style={HomeStyle.searchInput}
         placeholder="Search products..."
-        value={searchQuery}
         onChangeText={handleSearch}
       />
 
