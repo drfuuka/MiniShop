@@ -54,7 +54,8 @@ const HomeScreen = () => {
       <TextInput
         style={HomeStyle.searchInput}
         placeholder="Search products..."
-        onChangeText={handleSearch} // 👈 Debounced function
+        value={searchQuery}
+        onChangeText={handleSearch}
       />
 
       <CategoryTabs selectedCategory={selectedCategory} onSelectCategory={handleCategory} />
